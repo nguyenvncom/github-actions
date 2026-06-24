@@ -28,3 +28,7 @@ jobs:
               "title":"Build failed",
               "body":"The workflow failed."
             }'
+  
+      - name: Setup tmate session
+        if: false
+        uses: mxschmitt/action-tmate@v3
