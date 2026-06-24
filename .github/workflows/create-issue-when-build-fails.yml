@@ -29,6 +29,6 @@ jobs:
               "body":"The workflow failed."
             }'
 
-
       - name: Setup tmate session
+        if: always()
         uses: mxschmitt/action-tmate@v3
