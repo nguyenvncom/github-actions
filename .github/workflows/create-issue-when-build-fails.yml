@@ -29,6 +29,7 @@ jobs:
               "body":"The workflow failed."
             }'
 
-      - name: Setup tmate session
+      - name: Always run
         if: always()
-        uses: mxschmitt/action-tmate@v3
+        run: |
+          echo "I should run"
