@@ -28,8 +28,3 @@ jobs:
               "title":"Build failed",
               "body":"The workflow failed."
             }'
-
-      - name: Always run
-        if: always()
-        run: |
-          echo "I should run"
